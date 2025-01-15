@@ -7,7 +7,6 @@ import Image from "next/image";
 import { signOut } from "next-auth/react";
 
 export default function Home() {
-  // const session = await getSession()
   const [session, setSession] = useState<Session | null>(null)
   useEffect(() => {
     const getServerSession = async () => {
